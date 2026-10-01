@@ -11,12 +11,14 @@ const navLinks = document.getElementById('navLinks');
 dropdownBtn.addEventListener('click', (e) => {
   e.stopPropagation();
   navLinks.classList.toggle('open');
+  dropdownBtn.classList.toggle('open');
 });
 
 // Close dropdown when clicking outside
 document.addEventListener('click', (e) => {
   if (!e.target.closest('.nav-dropdown')) {
     navLinks.classList.remove('open');
+    dropdownBtn.classList.remove('open');
   }
 });
 
@@ -24,6 +26,7 @@ document.addEventListener('click', (e) => {
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
+    dropdownBtn.classList.remove('open');
   });
 });
 
