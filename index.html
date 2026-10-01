@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UOFIE Game - Digital Game Development Research</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <img src="images/logo.png" alt="UOFIE Logo" class="logo-img">
+      </a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-btn" id="navDropdownBtn">Menu ▾</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#concept">1. Concept</a></li>
+          <li><a href="#difference">2. Difference</a></li>
+          <li><a href="#leaderboards">Leaderboards</a></li>
+          <li><a href="#development">3. Development</a></li>
+          <li><a href="#languages">4. Languages</a></li>
+          <li><a href="#database">5. Database</a></li>
+          <li><a href="#php">6. How PHP Works</a></li>
+          <li><a href="#php-handle">7. What PHP Can Handle</a></li>
+          <li><a href="#realtime">8. Real-Time</a></li>
+          <li><a href="#tools">9. Tools</a></li>
+          <li><a href="#design">10. Graphics &amp; UI/UX</a></li>
+          <li><a href="#animations">11. Animations</a></li>
+          <li><a href="#sound">12. Sound</a></li>
+          <li><a href="#video">13. Video</a></li>
+          <li><a href="#screens">14. Screens</a></li>
+          <li><a href="#process">15. Process</a></li>
+          <li><a href="#mvp">16. MVP</a></li>
+          <li><a href="#stack">17. Stack</a></li>
+          <li><a href="#useful">18. Useful</a></li>
+          <li><a href="#structure">19. Structure</a></li>
+          <li><a href="#conclusion">20. Short Conclusion</a></li>
+          <li><a href="#final-description">21. Final Description</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-content fade-in">
+      <p class="hero-badge">Digital Game Development Research</p>
+      <h1>UOFIE Game</h1>
+      <p class="hero-subtitle">Interactive educational quiz platform for <strong>The French University in Egypt (UFE)</strong></p>
+      <p class="hero-tagline">Learn. Play. Compete.</p>
+      <div class="hero-actions">
+        <a href="#concept" class="btn btn-primary">Explore Research</a>
+        <a href="#screens" class="btn btn-secondary">View UI Designs</a>
+      </div>
+    </div>
+    <div class="hero-visual fade-in delay-1">
+      <img src="images/img-007.jpg" alt="UOFIE Welcome Screen" class="hero-img">
+    </div>
+  </header>
+
+  <section id="concept" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">1. Exact Game Idea</h2>
+      <div class="card reveal">
+        <h3>UOFIE Game</h3>
+        <p>An interactive educational quiz game for <strong>UFE students and professors</strong>, inspired by Kahoot. Professors create lecture-based quizzes; students join, earn points, and climb leaderboards.</p>
+      </div>
+      <h3 class="subsection-title reveal">How the Game Works</h3>
+      <div class="grid-2">
+        <div class="card feature-card reveal">
+          <div class="feature-icon">👨‍🏫</div>
+          <h3>Professors</h3>
+          <ul>
+            <li>Create account &amp; log in</li>
+            <li>Build quizzes per course/lecture</li>
+            <li>Add questions, answers &amp; timers</li>
+            <li>Start games &amp; view results</li>
+          </ul>
+        </div>
+        <div class="card feature-card reveal delay-1">
+          <div class="feature-icon">👨‍🎓</div>
+          <h3>Students</h3>
+          <ul>
+            <li>Log in with university account</li>
+            <li>Join via game code or QR</li>
+            <li>Answer under time pressure</li>
+            <li>Compete on live leaderboards</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="difference" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">2. What Makes UOFIE Different?</h2>
+      <div class="card reveal">
+        <p>Unlike generic quiz apps, UOFIE is built specifically for UFE:</p>
+        <ul class="list-check">
+          <li>Organized by <strong>university courses &amp; lectures</strong></li>
+          <li>Multi-level leaderboards (Quiz → Course → Class → Department)</li>
+          <li>UFE branding &amp; campus-style competition</li>
+          <li>Professor analytics tied to real courses</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="leaderboards" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">University Leaderboards</h2>
+      <p class="lead reveal"><strong>Small competition → bigger competition → university-wide.</strong></p>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">1</div>
+          <div class="card">
+            <h3>Quiz Leaderboard</h3>
+            <p>Ranking within one quiz — shown right after it ends.</p>
+            <div class="table-scroll"><table class="simple-table">
+              <thead><tr><th>Rank</th><th>Student</th><th>Score</th></tr></thead>
+              <tbody>
+                <tr><td>🥇 1</td><td>Ahmed</td><td>950</td></tr>
+                <tr><td>🥈 2</td><td>Sara</td><td>900</td></tr>
+                <tr><td>🥉 3</td><td>Lena</td><td>850</td></tr>
+                <tr><td>4</td><td>Omar</td><td>800</td></tr>
+              </tbody>
+            </table></div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">2</div>
+          <div class="card">
+            <h3>Course Leaderboard</h3>
+            <p>Total points across all quizzes in a course.</p>
+            <div class="table-scroll"><table class="simple-table">
+              <thead><tr><th>Rank</th><th>Student</th><th>Course Points</th></tr></thead>
+              <tbody>
+                <tr><td>🥇 1</td><td>Sara</td><td>9,500</td></tr>
+                <tr><td>🥈 2</td><td>Lena</td><td>9,200</td></tr>
+                <tr><td>🥉 3</td><td>Ahmed</td><td>8,900</td></tr>
+              </tbody>
+            </table></div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">3</div>
+          <div class="card">
+            <h3>Class Leaderboard</h3>
+            <p>Competition within the same section.</p>
+            <div class="table-scroll"><table class="simple-table">
+              <thead><tr><th>Rank</th><th>Student</th><th>Points</th></tr></thead>
+              <tbody>
+                <tr><td>🥇 1</td><td>Student A</td><td>8,950</td></tr>
+                <tr><td>🥈 2</td><td>Student B</td><td>8,700</td></tr>
+                <tr><td>🥉 3</td><td>Student C</td><td>8,450</td></tr>
+              </tbody>
+            </table></div>
+            <div class="class-vs">
+              <span>Class A: 85,400</span>
+              <span>Class B: 82,900</span>
+              <span>Class C: 79,600</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">4</div>
+          <div class="card">
+            <h3>Department Leaderboard</h3>
+            <p>University-wide ranking within a department.</p>
+            <div class="table-scroll"><table class="simple-table">
+              <thead><tr><th>Rank</th><th>Student</th><th>Department Points</th></tr></thead>
+              <tbody>
+                <tr><td>🥇 1</td><td>Sara</td><td>24,100</td></tr>
+                <tr><td>🥈 2</td><td>Ahmed</td><td>22,800</td></tr>
+                <tr><td>🥉 3</td><td>Lena</td><td>21,500</td></tr>
+              </tbody>
+            </table></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title reveal">Professor Dashboard</h3>
+      <div class="card reveal">
+        <ul class="list-check">
+          <li>Quiz creation &amp; management</li>
+          <li>Live participation tracking</li>
+          <li>Score analytics per student &amp; question</li>
+          <li>Export results</li>
+        </ul>
+      </div>
+
+      <h3 class="subsection-title reveal">Gamification Features</h3>
+      <div class="grid-2">
+        <div class="card reveal">
+          <ul class="list-check">
+            <li>Points for speed &amp; accuracy</li>
+            <li>Streaks for consecutive correct answers</li>
+            <li>Badges &amp; achievements</li>
+          </ul>
+        </div>
+        <div class="card reveal delay-1">
+          <ul class="list-check">
+            <li>Real-time leaderboard updates</li>
+            <li>Level-up feedback</li>
+            <li>Class &amp; department rivalry</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="development" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">3. How Could the Game Be Developed?</h2>
+      <div class="card reveal">
+        <p>Built as a <strong>web-based game</strong> so it works on phones, tablets, or laptops without installing an app.</p>
+        <ul class="list-check">
+          <li>Works in the browser</li>
+          <li>Easy to update and deploy</li>
+          <li>Fits classroom use (join via code/QR)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="languages" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">4. Programming Languages</h2>
+      <div class="grid-2">
+        <div class="card reveal">
+          <h3>Frontend</h3>
+          <ul class="list-check">
+            <li><strong>HTML</strong> - structure</li>
+            <li><strong>CSS</strong> - design &amp; animations</li>
+            <li><strong>JavaScript</strong> - interactivity, timers, live scores</li>
+          </ul>
+        </div>
+        <div class="card reveal delay-1">
+          <h3>Backend</h3>
+          <ul class="list-check">
+            <li><strong>PHP</strong> - server logic, auth, quiz APIs</li>
+            <li><strong>MySQL</strong> - data storage</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="database" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">5. Database</h2>
+      <div class="card reveal">
+        <p><strong>MySQL</strong> via <strong>XAMPP</strong> for local development. Core tables:</p>
+        <p class="table-swipe-hint">On mobile: swipe tables sideways to see all columns →</p>
+      </div>
+      <div class="db-tables reveal">
+        <div class="card">
+          <h4>Students</h4>
+          <div class="table-scroll"><table class="simple-table">
+            <thead><tr><th>Student ID</th><th>Name</th><th>Email</th><th>Department</th></tr></thead>
+            <tbody>
+              <tr><td>S001</td><td>Ahmed Hassan</td><td>ahmed@ufe.edu.eg</td><td>Business</td></tr>
+              <tr><td>S002</td><td>Sara Mohamed</td><td>sara@ufe.edu.eg</td><td>Business</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <div class="card">
+          <h4>Professors</h4>
+          <div class="table-scroll"><table class="simple-table">
+            <thead><tr><th>Professor ID</th><th>Name</th><th>Email</th><th>Department</th></tr></thead>
+            <tbody>
+              <tr><td>P001</td><td>Dr. Amr Hassan</td><td>amr@ufe.edu.eg</td><td>Business</td></tr>
+              <tr><td>P002</td><td>Dr. Mona Ali</td><td>mona@ufe.edu.eg</td><td>Economics</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <div class="card">
+          <h4>Courses</h4>
+          <div class="table-scroll"><table class="simple-table">
+            <thead><tr><th>Course ID</th><th>Course Name</th><th>Professor</th></tr></thead>
+            <tbody>
+              <tr><td>C001</td><td>Digital Marketing</td><td>Dr. Amr Hassan</td></tr>
+              <tr><td>C002</td><td>Accounting</td><td>Dr. Mona Ali</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <div class="card">
+          <h4>Quizzes</h4>
+          <div class="table-scroll"><table class="simple-table">
+            <thead><tr><th>Quiz ID</th><th>Quiz Title</th><th>Course</th><th>Lecture</th><th>Professor</th></tr></thead>
+            <tbody>
+              <tr><td>Q001</td><td>Consumer Behavior</td><td>Digital Marketing</td><td>Lecture 3</td><td>Dr. Amr Hassan</td></tr>
+              <tr><td>Q002</td><td>Marketing Mix</td><td>Digital Marketing</td><td>Lecture 4</td><td>Dr. Amr Hassan</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <div class="card">
+          <h4>Questions</h4>
+          <div class="table-scroll"><table class="simple-table">
+            <thead><tr><th>Question ID</th><th>Quiz ID</th><th>Question</th><th>Answer 1</th><th>Answer 2</th><th>Answer 3</th><th>Answer 4</th><th>Correct</th></tr></thead>
+            <tbody>
+              <tr><td>QN01</td><td>Q001</td><td>What is Digital Marketing?</td><td>Only social media</td><td>Online promotion</td><td>TV ads only</td><td>Print media</td><td>Answer 2</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <div class="card">
+          <h4>Results</h4>
+          <div class="table-scroll"><table class="simple-table">
+            <thead><tr><th>Result ID</th><th>Student</th><th>Quiz</th><th>Score</th><th>Correct Answers</th><th>Time</th></tr></thead>
+            <tbody>
+              <tr><td>R001</td><td>Ahmed Hassan</td><td>Q001</td><td>950</td><td>9/10</td><td>4:32</td></tr>
+              <tr><td>R002</td><td>Sara Mohamed</td><td>Q001</td><td>900</td><td>8/10</td><td>5:10</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="php" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">6. How PHP Would Work in the Game</h2>
+      <div class="card reveal">
+        <h3>Professor creates a quiz</h3>
+        <div class="flow-diagram">PROFESSOR → PHP BACKEND → MYSQL → QUIZ SAVED</div>
+      </div>
+      <div class="card reveal" style="margin-top:1.5rem;">
+        <h3>Student enters a game code</h3>
+        <div class="flow-diagram">GAME CODE → PHP → MYSQL CHECK → QUIZ LOADED</div>
+      </div>
+      <h2 id="php-handle" class="section-title reveal" style="margin-top:3rem;">7. What PHP Can Handle</h2>
+      <div class="card reveal">
+        <ul class="list-check">
+          <li>Login &amp; authentication</li>
+          <li>Quiz &amp; question CRUD</li>
+          <li>Scoring &amp; result storage</li>
+          <li>Leaderboard queries</li>
+          <li>Professor analytics APIs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="realtime" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">8. Real-Time Multiplayer System</h2>
+      <div class="card reveal">
+        <p>Students join the same live session and answer together.</p>
+        <div class="example-box" style="font-size:1.25rem; text-align:center;">Game Code: <strong>UFE482</strong></div>
+        <ul class="list-check">
+          <li>Join via code or QR code</li>
+          <li>Shared timer per question</li>
+          <li>Live score updates</li>
+          <li>Instant leaderboard refresh</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">9. Tools and Software Needed</h2>
+      <div class="grid-2">
+        <div class="card reveal">
+          <h3>Development</h3>
+          <ul class="list-check">
+            <li>VS Code / Cursor</li>
+            <li>XAMPP (Apache + MySQL)</li>
+            <li>phpMyAdmin</li>
+            <li>Git</li>
+          </ul>
+        </div>
+        <div class="card reveal delay-1">
+          <h3>Design</h3>
+          <ul class="list-check">
+            <li>Figma - UI/UX</li>
+            <li>Canva - graphics</li>
+            <li>Audacity - sound</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="design" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">10. Graphics and UI/UX Design</h2>
+      <div class="card reveal">
+        <p>Clean, modern interface with UFE inspired colors. Designed in <strong>Figma</strong> and polished in <strong>Canva</strong>.</p>
+        <ul class="list-check">
+          <li>Simple navigation for phones &amp; desktops</li>
+          <li>Clear quiz layout with large answer buttons</li>
+          <li>Consistent branding (logo, colors, icons)</li>
+        </ul>
+      </div>
+
+      <h2 id="animations" class="section-title reveal" style="margin-top:3rem;">11. Animations</h2>
+      <div class="card reveal">
+        <p>Animations make feedback more fun. <em>Click each box to preview:</em></p>
+        <div class="anim-demo correct-demo" id="correctDemo" role="button" tabindex="0">
+          <div class="anim-demo-inner">
+            <strong>Correct Answer</strong>
+            <div class="anim-result correct-result">
+              <span class="anim-icon">✓</span>
+              <span class="anim-text">Correct! +100 points</span>
+            </div>
+            <em class="anim-hint">Click to preview animation</em>
+          </div>
+          <div class="particles" aria-hidden="true"></div>
+        </div>
+        <div class="anim-demo wrong-demo" id="wrongDemo" role="button" tabindex="0">
+          <div class="anim-demo-inner">
+            <strong>Wrong Answer</strong>
+            <div class="anim-result wrong-result">
+              <span class="anim-icon">✗</span>
+              <span class="anim-text">Oops! Try again on the next question!</span>
+            </div>
+            <em class="anim-hint">Click to preview animation</em>
+          </div>
+        </div>
+        <p style="margin-top:1rem;">Also used for leaderboard rank changes, level ups, and countdown timers.</p>
+        <p><strong>Tools:</strong> CSS · JavaScript · Lottie · Figma</p>
+      </div>
+
+      <h2 id="sound" class="section-title reveal" style="margin-top:3rem;">12. Sound</h2>
+      <div class="card reveal">
+        <p>Sound effects make the game more engaging. <em>(click each one to hear a sample)</em></p>
+        <ul class="sound-list">
+          <li><button type="button" class="sound-btn" data-sound="countdown">🔊 Countdown sound</button></li>
+          <li><button type="button" class="sound-btn" data-sound="correct">🔊 Correct-answer sound</button></li>
+          <li><button type="button" class="sound-btn" data-sound="wrong">🔊 Wrong-answer sound</button></li>
+          <li><button type="button" class="sound-btn" data-sound="winning">🔊 Winning sound</button></li>
+          <li><button type="button" class="sound-btn" data-sound="levelup">🔊 Level-up sound</button></li>
+        </ul>
+        <p><strong>Tools:</strong> Audacity · sound libraries · JavaScript. Include a <strong>mute option</strong>.</p>
+      </div>
+
+      <h2 id="video" class="section-title reveal" style="margin-top:3rem;">13. Video</h2>
+      <div class="card reveal">
+        <p>Optional short videos inside questions for visual explanations.</p>
+        <div class="example-box">Watch this 20 second video and answer the question.</div>
+        <ul class="list-check">
+          <li>Uploaded by professors or embedded from approved sources</li>
+          <li>Tools: Canva · CapCut · Adobe Premiere Pro</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">14. Main Screens of the Game</h2>
+      <p class="lead reveal">Hover or click any screen to enlarge.</p>
+      <div class="screens-grid">
+        <figure class="screen-card reveal" data-full="images/img-007.jpg">
+          <img src="images/img-007.jpg" alt="Welcome Page">
+          <figcaption>1. Welcome Page</figcaption>
+        </figure>
+        <figure class="screen-card reveal delay-1" data-full="images/img-008.jpg">
+          <img src="images/img-008.jpg" alt="Student Dashboard">
+          <figcaption>2. Student Dashboard</figcaption>
+        </figure>
+        <figure class="screen-card reveal" data-full="images/img-009.jpg">
+          <img src="images/img-009.jpg" alt="Professor Dashboard">
+          <figcaption>3. Professor Dashboard</figcaption>
+        </figure>
+        <figure class="screen-card reveal delay-1" data-full="images/img-010.jpg">
+          <img src="images/img-010.jpg" alt="Quiz Screen">
+          <figcaption>4. Quiz Screen</figcaption>
+        </figure>
+        <figure class="screen-card reveal" data-full="images/img-011.jpg">
+          <img src="images/img-011.jpg" alt="Leaderboard">
+          <figcaption>5. Leaderboard</figcaption>
+        </figure>
+        <figure class="screen-card reveal delay-1" data-full="images/img-012.jpg">
+          <img src="images/img-012.jpg" alt="Final Results">
+          <figcaption>6. Final Results</figcaption>
+        </figure>
+      </div>
+      <div class="lightbox" id="lightbox">
+        <img src="" alt="Full screen preview" id="lightboxImg">
+        <button class="lightbox-close" id="lightboxClose">✕</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">15. Development Process</h2>
+      <div class="card reveal">
+        <ol style="padding-left:1.25rem; line-height:1.9;">
+          <li><strong>Research &amp; concept</strong> - define features &amp; users</li>
+          <li><strong>UI/UX design</strong> - Figma wireframes &amp; mockups</li>
+          <li><strong>Database design</strong> - MySQL schema</li>
+          <li><strong>Frontend build</strong> - HTML/CSS/JS screens</li>
+          <li><strong>Backend build</strong> - PHP APIs &amp; auth</li>
+          <li><strong>Integration</strong> - connect UI to database</li>
+          <li><strong>Testing</strong> - classroom trials &amp; fixes</li>
+          <li><strong>MVP release</strong> - core features first</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="mvp" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">16. Minimum Viable Product (MVP)</h2>
+      <div class="card reveal" style="border-color:#22c55e;">
+        <p><strong>First version includes:</strong></p>
+        <ul class="list-check">
+          <li>Student &amp; professor login</li>
+          <li>Quiz creation (multiple choice)</li>
+          <li>Join via code / QR</li>
+          <li>Timer &amp; automatic scoring</li>
+          <li>Quiz leaderboard</li>
+          <li>MySQL + PHP backend</li>
+        </ul>
+        <p style="margin-top:1rem;"><em>Later:</em> course/class/department leaderboards, badges, video questions, deeper analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">17. Final Technology Stack</h2>
+      <div class="card reveal">
+        <div class="table-scroll"><table class="simple-table">
+          <thead><tr><th>Layer</th><th>Technology</th></tr></thead>
+          <tbody>
+            <tr><td>Frontend</td><td>HTML, CSS, JavaScript</td></tr>
+            <tr><td>Backend</td><td>PHP</td></tr>
+            <tr><td>Database</td><td>MySQL</td></tr>
+            <tr><td>Local server</td><td>XAMPP</td></tr>
+            <tr><td>Design</td><td>Figma + Canva</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="useful" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">18. Why This Game Is Useful for UFE</h2>
+      <div class="grid-2">
+        <div class="card reveal">
+          <ul class="list-check">
+            <li>Makes lectures more interactive</li>
+            <li>Instant feedback for students</li>
+            <li>Healthy competition via leaderboards</li>
+          </ul>
+        </div>
+        <div class="card reveal delay-1">
+          <ul class="list-check">
+            <li>Helps professors track understanding</li>
+            <li>Built around real UFE courses</li>
+            <li>Works on any device in class</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="structure" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">19. Project Structure</h2>
+      <div class="card reveal">
+        <pre style="margin:0; white-space:pre-wrap; font-family:ui-monospace,monospace; font-size:0.9rem; line-height:1.7;">UOFIE-Game
+│
+├── index.php
+├── login.php
+├── register.php
+│
+├── student/
+│   ├── dashboard.php
+│   ├── join-game.php
+│   ├── quiz.php
+│   ├── results.php
+│   └── leaderboard.php
+│
+├── professor/
+│   ├── dashboard.php
+│   ├── create-quiz.php
+│   ├── questions.php
+│   └── reports.php
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── quiz.js
+│   ├── timer.js
+│   └── leaderboard.js
+│
+├── php/
+│   ├── database.php
+│   ├── login.php
+│   ├── save-quiz.php
+│   ├── check-answer.php
+│   └── save-result.php
+│
+└── assets/
+    ├── images/
+    ├── sounds/
+    └── videos/</pre>
+        <p style="margin-top:1rem;">This structure separates the student side, professor side, PHP backend, JavaScript, and media files.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="conclusion" class="section conclusion">
+    <div class="container">
+      <h2 class="section-title reveal">20. Short Conclusion</h2>
+      <div class="grid-2">
+        <div class="card reveal">
+          <p>UOFIE turns classroom quizzes into a competitive, course aware game tailored for UFE.</p>
+        </div>
+        <div class="card reveal delay-1">
+          <p>It combines real time play, multi level leaderboards, and professor tools in one platform.</p>
+        </div>
+      </div>
+      <h2 id="final-description" class="section-title reveal" style="margin-top:3rem;">21. Final Description of the Idea</h2>
+      <div class="card reveal">
+        <p><strong>UOFIE</strong> is a web based educational quiz game for The French University in Egypt. Professors create lecture quizzes; students join live, earn points, and climb quiz, course, class, and department leaderboards - making learning more engaging through play and competition.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>UOFIE Game · Built for The French University in Egypt</p>
+      <p class="footer-sub">Educational Gamification Research Project</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
